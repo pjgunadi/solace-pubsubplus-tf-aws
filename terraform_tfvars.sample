@@ -1,0 +1,11 @@
+profile = "default"
+region = "ap-southeast-1"
+vmr_keypair = "Change-to-your-keypair"
+vmr_secgrp = "Change-to-your-AWS-security-group"
+vmr_ha=false
+vmr_name="solace1"
+vmr_instance_type="t3.medium"
+vmr_storage_size=30
+admin_user="admin"
+admin_password="Change-to-your-password"
+storage_device="nvme1n1"
