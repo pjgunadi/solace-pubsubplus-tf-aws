@@ -51,7 +51,6 @@ resource "aws_instance" "vmr-backup" {
   ami = data.aws_ami.solace_std.id
   instance_type = var.vmr_instance_type
   key_name = var.vmr_keypair
-  availability_zone = aws_instance.vmr-main.availability_zone
   tags = {
     Name = "${var.vmr_name}-b"
   }
@@ -70,7 +69,6 @@ resource "aws_instance" "vmr-monitor" {
   ami = data.aws_ami.solace_std.id
   instance_type = var.vmr_instance_type
   key_name = var.vmr_keypair
-  availability_zone = aws_instance.vmr-main.availability_zone
   tags = {
     Name = "${var.vmr_name}-c"
   }
